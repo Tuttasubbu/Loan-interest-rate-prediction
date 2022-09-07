@@ -12,7 +12,7 @@ A company is in the financial lending business and provides loans to retail cust
 - Model Evaluation
 - Parameter tuning
 - Prediction
-## Analysis/ Modeling Methodology
+## Analysis/ Modeling MethodologyModel Building
 ## Data Preparation & EDA
 - Sub-setting is done by removing Loan_ID.
 - All the missing values have been replaced with corresponding mean or mode.
@@ -29,3 +29,16 @@ A company is in the financial lending business and provides loans to retail cust
 - Conducted k-cross validation for k=5,10,15.
 - Model performance also assessed on a hold-out sample of size 20% of the original dataset.
 - Performed all the required metrics precision ,recall, confusion matrix ,roc_auc curve.
+## Model Building
+- Developed a decision tree classifier model on the data set provided
+- Split the data into 80% and 20%. 80% of records for train the model and remaining records are for testing.
+- Trained the model with data.
+## Model evaluation
+![Confusion_Matrix](https://user-images.githubusercontent.com/93317185/188926190-6a686b26-f1d7-4159-aee9-e6ec2401877c.png)
+
+![ROC curves for DecisionTreeClassifier](https://user-images.githubusercontent.com/93317185/188926235-80c7ae56-88e2-4906-bb72-4fe43a9c2cb6.png)
+
+- Cross validation score For the further validation, Cross Validation technique is used with k-Fold values 10,15, and 20 The average score that is obtained around 42%.
+
+- The model performance is little poor. Because data is fully baised.
+
